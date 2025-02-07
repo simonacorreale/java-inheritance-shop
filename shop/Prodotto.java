@@ -38,7 +38,7 @@ Buon lavoro!
      public int getCodice() {
          return codice;
      }
-     
+
  // getter e setter nome
      public String getNome() {
          return nome;
@@ -73,7 +73,7 @@ Buon lavoro!
      }
  
 // metodo per IVA
-     public double calcolaPrezzoTotale() {
+     public double getCalcolaPrezzoTotale() {
          return prezzo + (prezzo * iva / 100);
      }
  }

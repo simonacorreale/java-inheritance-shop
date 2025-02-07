@@ -1,3 +1,5 @@
+
+// Wirless & colore
 public class Cuffie extends Prodotto {
 
     private String colore;
@@ -19,13 +21,12 @@ public class Cuffie extends Prodotto {
         this.colore = colore;
     }
 // getter e setter wirless
-    public boolean getWireless() {
+    public boolean isWireless() {
         return wireless;
     }
 
     public void setWireless(boolean wireless) {
         this.wireless = wireless;
     }
-
 
 }
