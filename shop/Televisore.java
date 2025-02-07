@@ -2,12 +2,23 @@
 // Televisori smart o no
 
 public class Televisore extends Prodotto {
+    private final int pollici;
+    private final boolean smartTV;
 
-    public Televisore() {
-        super(0, null, null, 0, 0);
+    public Televisore(int codice, String nome, String marca, double prezzo, double iva, int pollici, boolean smartTV) {
+        super(codice, nome, marca, prezzo, iva);
+        this.pollici = pollici;
+        this.smartTV = smartTV;
     }
-    
-    
 
+    // getter per pollici
+    public int getPollici() {
+        return pollici;
+    }
+
+    // getter per smartTV
+    public boolean isSmartTV() {
+        return smartTV;
+    }
 
 }
