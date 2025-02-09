@@ -19,12 +19,13 @@ public class Carrello {
         
         System.out.print("Benvenuto nello Zimo's shop! Inserisci il nome del prodotto che desideri visualizzare: ");
         String prodottoScelto = scan.nextLine();
-        
+
 // Oggetto 1
         Cuffie cuffieTool = new Cuffie(33, "Duo", "Sony", 22.00, 22.00, "aqua", false);
 // Oggetto 2
         Televisore televisoreTool = new Televisore(34, "Trio", "Samsung", 123.99, 22.00, 32, false);
- // Non mi funziona il costruttore di telefono, ho usato solo due costruttori
+// Oggetto 3
+// Non mi funziona il costruttore di telefono, ho usato solo due costruttori
         /* Smartphone telefonoTool = new Smartphone(35, "Trio", "Samsung", 123.99d, 22.00d, 123456789098765L, 16.00d); */
 
         if (prodottoScelto.equals("cuffie")) {
