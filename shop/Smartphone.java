@@ -25,8 +25,8 @@ public class Smartphone extends Prodotto {
     public void setMemoria(double memorySpace) { 
         this.memorySpace = memorySpace;
     }
-
-     @Override
+// override
+    @Override
     public String toString() {
         return super.toString() + ", IMEI = " + imeiCodice + ", Memoria = " + memorySpace + "GB";
     }

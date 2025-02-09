@@ -28,14 +28,19 @@ public class Carrello {
 // Non mi funziona il costruttore di telefono, ho usato solo due costruttori
         /* Smartphone telefonoTool = new Smartphone(35, "Trio", "Samsung", 123.99d, 22.00d, 123456789098765L, 16.00d); */
 
-        if (prodottoScelto.equals("cuffie")) {
-            System.out.println(cuffieTool);
-        } else if (prodottoScelto.equals("televisore")) {
-            System.out.println(televisoreTool);
-        } else {
-            System.out.println("Prodotto non disponibile.");
+        switch (prodottoScelto) {
+            case "cuffie":
+                System.out.println(cuffieTool);
+                break;
+            case "televisore":
+                System.out.println(televisoreTool);
+                break;
+            default:
+                System.out.println("Prodotto non disponibile.");
         }
         
+// messaggio di chiusura
+        System.out.println("Grazie per aver visitato Zimo's Shop! Arrivederci!");
         scan.close();
 }
 }

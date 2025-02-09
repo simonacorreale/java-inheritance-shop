@@ -78,8 +78,8 @@ Buon lavoro!
          return prezzo + (prezzo * iva / 100);
      }
 
-
-@Override
+// override
+    @Override
     public String toString() {
         return "Prodotto Codice = " + codice + ", Nome = " + nome + ", Marca = " + marca + ", Prezzo = " + prezzo + "€, IVA=" + iva + " %, Prezzo Totale =" + getCalcolaPrezzoTotale() + "€";
     }
