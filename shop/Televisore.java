@@ -1,6 +1,4 @@
-
 // Televisori smart o no
-
 public class Televisore extends Prodotto {
     private final int pollici;
     private final boolean smartTV;
@@ -11,14 +9,19 @@ public class Televisore extends Prodotto {
         this.smartTV = smartTV;
     }
 
-    // getter per pollici
+// getter per pollici
     public int getPollici() {
         return pollici;
     }
 
-    // getter per smartTV
+// getter per smartTV
     public boolean isSmartTV() {
         return smartTV;
+    }
+// override
+    @Override
+    public String toString() {
+        return super.toString() + ", Dimensioni = " + pollici + "\", Smart = " + (smartTV);
     }
 
 }

@@ -61,7 +61,8 @@ Buon lavoro!
      }
  
      public void setPrezzo(double prezzo) {
-         this.prezzo = prezzo;
+        
+        this.prezzo = prezzo;
      }
  
      public double getIva() {
@@ -76,5 +77,12 @@ Buon lavoro!
      public double getCalcolaPrezzoTotale() {
          return prezzo + (prezzo * iva / 100);
      }
+
+
+@Override
+    public String toString() {
+        return "Prodotto Codice = " + codice + ", Nome = " + nome + ", Marca = " + marca + ", Prezzo = " + prezzo + "€, IVA=" + iva + " %, Prezzo Totale =" + getCalcolaPrezzoTotale() + "€";
+    }
+
  }
  
